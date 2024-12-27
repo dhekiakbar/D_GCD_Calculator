@@ -9,18 +9,18 @@ int loop = 1;
 void main()
 {
     while(loop != 0){
-        write("Masukan Nilai A ");
+        write("Input your first number ");
         string m = readln().chomp;
         int a = m.to!int;
-        write("Masukan Nilai B ");
+        write("Input your second number ");
         string n = readln().chomp;
         int b = n.to!int;
         int gcd = solve.GCD(a, b);
-        writefln("FPB dari %s dan %s adalah %s", a, b, gcd);
+        writefln("GCD of %s and %s is %s", a, b, gcd);
         int j = 0;
         while(j < 100){write(".");j++;}
         writeln();
-        writeln("ketik 0 untuk keluar dan tekan enter untuk mengulang...");
+        writeln("Type 0 to exit or click enter to try again...");
         loop = readln().chomp.to!int;
     }
 }
